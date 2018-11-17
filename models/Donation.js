@@ -9,7 +9,7 @@ mongoose.connect('mongodb://localhost/charity-tracker', { useNewUrlParser: true 
 const Donation = mongoose.model('Donation', {
     donation: String,
     dateGiven: String,
-    address: String
+    charity: String
 });
 
 module.exports = Donation;

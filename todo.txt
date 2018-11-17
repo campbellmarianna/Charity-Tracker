@@ -1,8 +1,8 @@
 User Story
 - Allow user to keep track of what donations a user has made to charities
-    - Users can view all donations (index)
-    - Users can create a donation (new/create)
-    - Users can view one donation (show)
+    - *Users can view all donations (index)
+    - *Users can create a donation (new/create)
+    - *Users can view one donation (show)
     - Users can delete a donation (destroy)
     - Users can edit a donation (edit/update)
 - Allow user to give to the best, or highly rated charities
@@ -11,8 +11,8 @@ User Story
 Sprint #1
 Allow user to keep track of what donations a user has made to charities
 
-- Create the server
-- Create donation model
+- *Create the server
+- *Create donation model
 - CRUD donations
     - create routes
     - create forms
@@ -21,3 +21,6 @@ Requirements:
 Drawn wireframes
 Written in JavaScript using Node.js, Express.js, and MongoDB
 Written in MVC with separate files for each concern
+
+Ideas:
+Improve show page to have a default chart that has Donation next to the actual donation, date next to the date it was given and charity next to charity name.

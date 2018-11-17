@@ -1,6 +1,15 @@
-<!-- donations-index -->
+<!-- views/donations-index -->
 <h1>Donations</h1>
-{{#each reviews}}
-    <h2>{{this.title}}</h2>
-    <small>{{this.movieTitle}}</small>
-{{/each}}
+
+<div class="row">
+    {{#each donations}}
+        <div class="col-sm-3">
+            <h2><a href="/donations/{{this._id}}">{{this.donation}}</a></h2>
+            <small>{{this.dateGiven}}</small>
+            <small>{{this.charity}}</small>
+    {{else}}
+            <p class="empty">No donations</p>
+        </div>
+    {{/each}}
+
+</div>
