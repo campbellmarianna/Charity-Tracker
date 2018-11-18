@@ -66,6 +66,24 @@ app.delete('/donations/:id', function (req,res) {
     });
 });
 
+// EDIT
+app.get('/donations/:id/edit', (req, res) => {
+    Donation.findById(req.params.id, function(err, donation) {
+        res.render('donations-edit', {donation: donation});
+    })
+})
+
+// UPDATE
+app.put('/donations/:id', (req,res) => {
+    Donation.findByIdAndUpdate(req.params.id, req.body)
+    .then(donation => {
+        res.redirect(`/donations/${donation.id}`)
+    })
+    .catch(err => {
+        console.log(err.message)
+    })
+})
+
 app.listen(3000, () => {
     console.log('App listening on port 3000!')
 });

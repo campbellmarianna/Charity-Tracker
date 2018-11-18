@@ -3,8 +3,8 @@ User Story
     - *Users can view all donations (index)
     - *Users can create a donation (new/create)
     - *Users can view one donation (show)
-    - Users can delete a donation (destroy)
-    - Users can edit a donation (edit/update)
+    - *Users can delete a donation (destroy)
+    - *Users can edit a donation (edit/update)
 - Allow user to give to the best, or highly rated charities
 - Overall people giving to charity more
 
@@ -13,9 +13,13 @@ Allow user to keep track of what donations a user has made to charities
 
 - *Create the server
 - *Create donation model
-- CRUD donations
-    - create routes
-    - create forms
+- *CRUD donations
+    - *create routes
+    - *create forms
+
+Sprint #2
+- refactor code
+- add tests
 
 Requirements:
 Drawn wireframes
