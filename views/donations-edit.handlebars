@@ -2,20 +2,7 @@
 <form method="POST" action="/donations/{{donation._id}}?_method=PUT">
   <fieldset>
     <legend>Edit Donation</legend>
-    <!-- TITLE -->
-    <p>
-      <label for="donation">Donation</label><br>
-      <input type="text" name="donation" value="{{donation.donation}}"/>
-    </p>
-    <!-- Date Given -->
-    <p>
-      <label for="dateGiven">Date Given:</label><br>
-      <input type="text" name="dateGiven" value="{{donation.dateGiven}}"/>
-    </p>
-    <p>
-      <label for="charity">Charity:</label><br>
-      <input type="text" name="charity" value="{{donation.charity}}"/>
-    </p>
+    {{> donations-form}}
   </fieldset>
 
   <!-- CANCEL ADN SUBMIT BUTTON -->

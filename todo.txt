@@ -18,8 +18,8 @@ Allow user to keep track of what donations a user has made to charities
     - *create forms
 
 Sprint #2
-- refactor code
-- add tests
+- *refactor code
+- *add tests
 
 Requirements:
 Drawn wireframes
