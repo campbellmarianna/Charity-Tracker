@@ -10,7 +10,7 @@ const app = express();
 const mongoose = require('mongoose');
 const donationsController = require('./controllers/donations');
 
-const Donation = require('./models/donation');
+const Donation = require('./models/Donation');
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
