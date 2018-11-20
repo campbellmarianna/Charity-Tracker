@@ -12,7 +12,7 @@ module.exports = function(app, donation) {
         // .catch(err => {
         //     console.log(err);
         // });
-        res.render('home', {});
+        res.render('home', { msg: 'Handlebars are Cool!' });
     });
 
     //NEW
