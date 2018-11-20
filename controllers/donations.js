@@ -1,5 +1,5 @@
 // controllers/donations.js
-const Donation = require('../models/donation');
+const Donation = require('../models/Donation');
 
 module.exports = function(app, donation) {
 

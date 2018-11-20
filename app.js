@@ -3,10 +3,12 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
-const mongoose = require('mongoose');
-const donationsController = require('./controllers/donations');
+
 
 const app = express();
+
+const mongoose = require('mongoose');
+const donationsController = require('./controllers/donations');
 
 const Donation = require('./models/donation');
 
