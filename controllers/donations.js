@@ -12,7 +12,7 @@ module.exports = function(app, donation) {
         // .catch(err => {
         //     console.log(err);
         // });
-        res.render('donations-new', {});
+        res.render('home', {});
     });
 
     //NEW
