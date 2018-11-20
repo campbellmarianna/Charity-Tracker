@@ -1,5 +1,6 @@
 // Express - define routes
 const express = require('express');
+const dotenv = require('dotenv');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
@@ -21,7 +22,7 @@ donationsController(app);
 // mongoose.connect('mongodb://localhost/charity-tracker', { useNewUrlParser: true });
 
 // Point this production mongodb database URI
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000 ;
 
 // Mongoose Connection
 const mongoUri =
