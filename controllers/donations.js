@@ -5,13 +5,14 @@ module.exports = function(app, donation) {
 
     //ROOT ROUTE INDEX
     app.get('/', (req,res) => {
-        Donation.find()
-        .then(donations => {
-            res.render('donations-index', { donations: donations })
-        })
-        .catch(err => {
-            console.log(err);
-        });
+        // Donation.find()
+        // .then(donations => {
+        //     res.render('donations-index', { donations: donations })
+        // })
+        // .catch(err => {
+        //     console.log(err);
+        // });
+        res.render('donations-new', {});
     });
 
     //NEW
