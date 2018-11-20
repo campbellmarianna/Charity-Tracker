@@ -9,6 +9,8 @@ const donationsController = require('./controllers/donations');
 
 const app = express();
 
+const Donation = require('./models/donation');
+
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
