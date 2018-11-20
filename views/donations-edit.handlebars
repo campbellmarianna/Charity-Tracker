@@ -1,13 +1,18 @@
 <!--views/donation-edit.handlebars -->
-<form method="POST" action="/donations/{{donation._id}}?_method=PUT">
-  <fieldset>
-    <legend>Edit Donation</legend>
-    {{> donations-form}}
-  </fieldset>
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <form method="POST" action="/donations/{{donation._id}}?_method=PUT">
+          <fieldset>
+            <legend>Edit Donation</legend>
+            {{> donations-form}}
+          </fieldset>
 
-  <!-- CANCEL ADN SUBMIT BUTTON -->
-  <p>
-    <a href="/donations">Cancel</a><br><button type="submit">Save Donation</button>
-  </p>
-
-</form>
+          <!-- SUBMIT BUTTON -->
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">Save Donation</button>
+          </div>
+        </form>
+        <!-- CANCEL LINK -->
+        <a href="/donations">Cancel</a>
+    </div>
+</div>

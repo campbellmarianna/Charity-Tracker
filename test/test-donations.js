@@ -6,7 +6,7 @@ const server = require('../app');
 const should = chai.should();
 const Donation = require('../models/donation');
 
-// add a sampledonation
+// add a sampleDonation
 const sampleDonation = {
     "donation": "Socks & Shoes",
     "dateGiven": "11/18/18",
