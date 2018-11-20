@@ -9,6 +9,6 @@ const Donation = mongoose.model('Donation', {
     donation: String,
     dateGiven: String,
     charity: String
-});
+})
 
 module.exports = Donation;

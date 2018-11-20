@@ -4,7 +4,7 @@ const Donation = require('../models/donation');
 module.exports = function(app, donation) {
 
     //ROOT ROUTE INDEX
-    app.get('/donations', (req,res) => {
+    app.get('/', (req,res) => {
         Donation.find()
         .then(donations => {
             res.render('donations-index', { donations: donations })
@@ -22,7 +22,7 @@ module.exports = function(app, donation) {
     //CREATE
     app.post('/donations', (req,res) => {
         Donation.create(req.body).then((donation) => {
-        res.redirect('/donations');
+            res.redirect(`/donations/${donation._id}`);
       }).catch((err) => {
         console.log(err.message);
       });
@@ -46,7 +46,7 @@ module.exports = function(app, donation) {
     // DELETE
     app.delete('/donations/:id', function (req,res) {
         Donation.findByIdAndRemove(req.params.id).then((donation) => {
-            res.redirect('/donations');
+            res.redirect('/');
         }).catch((err) => {
             console.log(err.message);
         });
