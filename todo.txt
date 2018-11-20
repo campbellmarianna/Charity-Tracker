@@ -15,3 +15,6 @@ Written in MVC with separate files for each concern
 
 Ideas:
 Improve show page to have a default chart that has Donation next to the actual donation, date next to the date it was given and charity next to charity name.
+
+Details:
+App color palette: https://flatuicolors.com/palette/defo
