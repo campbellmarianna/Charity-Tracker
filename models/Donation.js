@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 const Donation = mongoose.model('Donation', {
     donation: String,
-    dateGiven: String,
+    createdAt: String,
     charity: String
 })
 

@@ -9,12 +9,66 @@ User Story
 - Overall people giving to charity more
 
 Requirements:
-Drawn wireframes
-Written in JavaScript using Node.js, Express.js, and MongoDB
-Written in MVC with separate files for each concern
+V1 -----------------------
+- *Drawn wireframes
+- *Written in JavaScript using Node.js, Express.js, and MongoDB
+- *Written in MVC with separate files for each concern
+- *100% test coverage of all routes
+- *Pushed live to Heroku
+- *A conventional UI using Bootstrap
+V2 -----------------------
+- CRUD >=2 Resources and associate them has-many/belongs-to
+    - CRUD Charities from API
+        -show and index(search is there req.query.term)
+        - 100% test coverage of all routes
+        - A conventional UI using Bootstrap (cards, tables)
+        - make donation from charity page
+        - add search for charities
 
 Ideas:
-Improve show page to have a default chart that has Donation next to the actual donation, date next to the date it was given and charity next to charity name.
+- Improve show page to have a default chart that has Donation next to the actual donation, date next to the date it was given and charity next to charity name.
+- Make a dashboard for the user showing the amount of donations they made last month
+- Add impact
+- Add Charity Show page
+- Allow user to give to charity - that autocompletes in the donation form
+- Add New Donation form link to charity show page
+- Make user donations info page a user image in the right corner of the homepage
+- Put charities in a chart
+- Show side tree of one charity multiple donations
 
 Details:
 App color palette: https://flatuicolors.com/palette/defo
+
+Heroku link: https://charity-tracker-mc.herokuapp.com/
+Notes:
+    - Donation
+        - createdAt
+        - donatedAt
+        - charity (id charity navigator API)
+        - impact
+            - children
+            - economic development (I’ntl)
+            - economic development (domestic)
+            - water
+            - mass incarceration
+            - deforestation
+            - carbon
+
+
+    - app.locals.impacts = [
+        “children”,
+        “water”,
+    ]
+
+    <datalist id=“impacts”>
+    {{#each impacts}}
+        <option value=“{{this}}” />
+    {{/each}}
+    </datalist>
+
+    Find or create
+
+    Impact
+    - Name
+    -
+  - Visual for mongo database: https://robomongo.org/download
