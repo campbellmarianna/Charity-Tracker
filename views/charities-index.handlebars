@@ -1,0 +1,25 @@
+<!-- views/charities-index -->
+<h1><u>Find a Charity</u></h1>
+<form action="/charities">
+    <input type="text" name="term">
+
+    <!--Search Button-->
+    <button type="submit">Search</button>
+</form>
+
+<div class="row">
+    {{#each orgs}}
+    <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{this.charityName}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{this.mailingAddress.city}}</h6>
+            <p class="card-text">{{this.irsClassification.nteeType}}</p>
+            <!--<a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>-->
+          </div>
+        </div>
+    </div>
+    {{/each}}
+
+</div>
