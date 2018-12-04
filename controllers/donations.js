@@ -7,7 +7,11 @@ module.exports = function(app, donation) {
     app.get('/', (req,res) => {
         Donation.find()
         .then(donations => {
-            res.render('donations-index', { donations: donations })
+            //=> RETURN JSON
+            if (req.header('Content-Type') == 'application/json') {return res.send({donations: donations});}
+
+            //=> RETURN HTML
+            return res.render('donations-index', { donations: donations }); //=> RENDER A TEMPLATE
         })
         .catch(err => {
             console.log(err);

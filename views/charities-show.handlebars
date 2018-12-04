@@ -1,0 +1,19 @@
+<!--views/charities-show.handlebars-->
+
+<a href="/charities">Back to Charity Search</a>
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <h1>{{charity.charityName}}</h1>
+        {{#if charity}}
+            <h3>{{charity.mission}}</h3>
+        {{/if}}
+        <h3>Entee Type: {{charity.irsClassification.nteeType}}</h3>
+        <p><a href="/charities/{{charity.charityNavigatorURL}}">More Information</a></p>
+    </div>
+</div>
+
+<div>
+    <a href:"https://www.CharityNavigator.org">
+        <img src:"https://www.charitynavigator.org/_gfx_/promo/new/logo120x60.gif" alt="Charity Navigator" height="60" width="120" >
+    </a>
+</div>
