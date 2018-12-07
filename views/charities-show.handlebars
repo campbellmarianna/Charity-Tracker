@@ -3,12 +3,12 @@
 <a href="/charities">Back to Charity Search</a>
 <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-        <h1>{{charity.charityName}}</h1>
-        {{#if charity}}
-            <h3>{{charity.mission}}</h3>
+        <h1>{{orgs.charityName}}</h1>
+        {{#if orgs}}
+            <h3>{{orgs.mission}}</h3>
         {{/if}}
-        <h3>Entee Type: {{charity.irsClassification.nteeType}}</h3>
-        <p><a href="/charities/{{charity.charityNavigatorURL}}">More Information</a></p>
+        <h3>Entee Type: {{orgs.irsClassification.nteeType}}</h3>
+        <!-- <p><a href="/charities/{{charity.charityNavigatorURL}}">More Information</a></p> -->
     </div>
 </div>
 

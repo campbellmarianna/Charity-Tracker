@@ -37,6 +37,7 @@ Ideas:
 - Make user donations info page a user image in the right corner of the homepage
 - Put charities in a chart
 - Show side tree of one charity multiple donations
+- Recommendation: Use populate to perform one to many relationship instead: https://mongoosejs.com/docs/populate.html
 
 Product Ideas:
 - help keep track of donations
