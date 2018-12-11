@@ -2,16 +2,25 @@
 <h1>Donations</h1>
 
 <a href="/donations/new">New Donation</a>
-
-<div class="row">
-    {{#each donations}}
-        <div class="col-sm-3">
-            <h2><a href="/donations/{{this._id}}">{{this.donation}}</a></h2>
-            <small>{{this.dateGiven}}</small>
-            <small>{{this.charity}}</small>
-        </div>
-    {{else}}
-            <p class="empty">No donations</p>
-    {{/each}}
-
-</div
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Donation</th>
+            <th scope="col">Created At:</th>
+            <th scope="col">Charity</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each donations}}
+        <tr>
+            <th scope="row">{{@index}}</th>
+            <td><a href="/donations/{{this._id}}">{{this.donation}}</a></td>
+            <td>{{this.createdAt}}</td>
+            <td>{{this.charity}}</td>
+        </tr>
+        {{else}}
+                <p class="empty">No donations</p>
+        {{/each}}
+    </tbody>
+</table>

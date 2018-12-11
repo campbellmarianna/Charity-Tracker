@@ -19,13 +19,13 @@ V1 -----------------------
 V2 -----------------------
 - CRUD >=2 Resources and associate them has-many/belongs-to
     - CRUD Charities from API
-        -show and index(search is there req.query.term)
+        -*show and index(search is there req.query.term)
         - 100% test coverage of all routes
-        - A conventional UI using Bootstrap (cards, tables)
+        - *A conventional UI using Bootstrap (cards, tables)
             - show trending charities when no has searched a charity
             - put search field in navbar
-        - make donation from charity page
-        - add search for charities
+        - *make donation from charity page
+        - *add search for charities
 
 Ideas:
 - Improve show page to have a default chart that has Donation next to the actual donation, date next to the date it was given and charity next to charity name.

@@ -26,6 +26,7 @@ module.exports = function(app, donation) {
     //CREATE
     app.post('/donations', (req,res) => {
         Donation.create(req.body).then((donation) => {
+            console.log(donation)
             res.redirect(`/donations/${donation._id}`);
       }).catch((err) => {
         console.log(err.message);

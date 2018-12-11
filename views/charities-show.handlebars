@@ -17,3 +17,20 @@
         <img src:"https://www.charitynavigator.org/_gfx_/promo/new/logo120x60.gif" alt="Charity Navigator" height="60" width="120" >
     </a>
 </div>
+
+<!--Donation Form-->
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <form method="POST" action="/donations">
+            <fieldset>
+                <legend>New Donation</legent>
+                {{> donations-form}}
+            </fieldset>
+
+            <!--BUTTON -->
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Save Donation</button>
+            </div>
+        </form>
+    </div>
+</div>
