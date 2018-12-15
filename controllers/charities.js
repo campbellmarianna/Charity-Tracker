@@ -28,7 +28,7 @@ module.exports = function(app) {
                 var parsed = JSON.parse(body);
 
                 // => RETURN JSON
-                if (req.header('Content-Type') == 'application/json') {return res.json({ orgs: parsed});}
+                if (req.header('Content-Type') == 'application/json') {res.json({ orgs: parsed});}
                 // return res.json(parsed)
                 //=> RETURN HTML
                 return res.render('charities-index', {orgs: parsed}); //=> RENDER A TEMPLATE
