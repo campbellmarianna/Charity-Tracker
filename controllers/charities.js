@@ -1,6 +1,5 @@
 // controllers/charities.js
 const https = require('https');
-const Charity = require('../models/charity');
 const Donation = require('../models/Donation');
 
 module.exports = function(app) {

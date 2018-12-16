@@ -39,7 +39,7 @@ const mongoUri =
    process.env.MONGODB_URI || "mongodb://localhost:27017/charity-tracker";
 mongoose.connect(
    mongoUri,
-   // { useNewUrlParser: true }
+   { useNewUrlParser: true }
 );
 
 app.listen(port, () => {
