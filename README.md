@@ -1,7 +1,7 @@
 # Charity Tracker
 
-This app is intended to help people keep track of donations they make to charities
-**_Charity Tracker_**  An application created with Node, Express and the official Charity Navigator API.
+This app is intended to help people keep track of donations they make to charities.
+**_Charity Tracker_** was created with Node, Express and the official Charity Navigator API.
 
 Official Charity Navigator API website: https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=1397
 
