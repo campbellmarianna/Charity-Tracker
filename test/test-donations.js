@@ -9,7 +9,7 @@ const Donation = require('../models/donation');
 // add a sampleDonation
 const sampleDonation = {
     "donation": "Socks & Shoes",
-    "dateGiven": "11/18/18",
+    "createdAt": "11/18/18",
     "charity": "Red Cross"
 }
 
