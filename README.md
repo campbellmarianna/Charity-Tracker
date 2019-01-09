@@ -5,6 +5,8 @@ This app is intended to help people keep track of donations they make to chariti
 
 Official Charity Navigator API website: https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=1397
 
+Website: https://charity-tracker-mc.herokuapp.com/
+
 ## Running Locally
 Make sure you have [Node.js](http://nodejs.org/) >= 10.11.0 installed.
 
