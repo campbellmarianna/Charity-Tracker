@@ -1,9 +1,11 @@
-# Charity Tracker
+# Donation Tracker
 
 This app is intended to help people keep track of donations they make to charities.
-**_Charity Tracker_** was created with Node, Express and the official Charity Navigator API.
+**_Donation Tracker_** was created with Node, Express and the official Charity Navigator API.
 
-Official Charity Navigator API website: https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=1397
+Official Donation Navigator API website: https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=1397
+
+Website: https://charity-tracker-mc.herokuapp.com/
 
 ## Running Locally
 Make sure you have [Node.js](http://nodejs.org/) >= 10.11.0 installed.
