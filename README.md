@@ -30,7 +30,7 @@ Charity Search - http://localhost:3000/charities
 
 The Charity search gives you charities based on keywords
 
-### Installing
+## Installing
 Mocha and Chia will need to be installed for running tests.
 
 ```sh
@@ -40,9 +40,9 @@ npm install chia
 
 ## Running the tests
 
-Make sure you have [Mocha](https://mochajs.org/) & [Chia](https://www.chaijs.com/)
+Make sure you have [Mocha](https://mochajs.org/) & [Chia](https://www.chaijs.com/) installed.
 
-Inside the project directory type `mocha` to run the tests
+Inside the project directory type `mocha` to run the tests.
 
 ### Break down into end to end tests
 
