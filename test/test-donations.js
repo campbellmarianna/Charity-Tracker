@@ -53,7 +53,7 @@ after(() => {
                     done();
                 });
     });
-
+    // TEST CREATE
     it('should create a SINGLE donation on /donations POST', (done) => {
         chai.request(server)
             .post('/donations')

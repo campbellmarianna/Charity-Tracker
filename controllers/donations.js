@@ -31,7 +31,7 @@ module.exports = function(app, donation) {
       }).catch((err) => {
         console.log(err.message);
       });
-    });
+  });
 
     // SHOW
     app.get('/donations/:id', (req, res) => {

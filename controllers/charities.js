@@ -11,6 +11,9 @@ module.exports = function(app) {
         // Encode the query string to remove white spaces and restricted characters
         var term = encodeURIComponent(queryString);
         // Put the search term into the giphy API search URL
+        // Axois.get(url+ `&search=` + term).then(function(response) {
+        // const api_data = response.data
+    // })
         https.get(url + `&search=` + term, function(response) {
             // Set encoding of response to utf8
             response.setEncoding('utf8');
