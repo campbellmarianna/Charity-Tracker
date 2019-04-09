@@ -1,6 +1,6 @@
 # Donation Tracker
 
-![Github](https://img.shields.io/github/languages/top/campbellmarianna/Donation-Tracker.svg)
+![Github](https://img.shields.io/github/languages/top/campbellmarianna/good-eats.svg)
 
 This app is intended to help people keep track of donations they make to charities.
 **_Donation Tracker_** was created with Node, Express and the official Charity Navigator API.
